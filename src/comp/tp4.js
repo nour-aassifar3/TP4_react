@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./tp4.css";
+import "../comp/style.css";
 
 function Api() {
   const [todos, setTodos] = useState([]);
@@ -24,7 +24,7 @@ function Api() {
 
   return (
     <div className="App">
-      <h1>Todo List</h1>
+      <h1>Welcome</h1>
       <ul>
         {todos.map(todo => (
           <li key={todo.id}>{todo.title}</li>
